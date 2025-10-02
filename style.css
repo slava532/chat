@@ -1,0 +1,26 @@
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#3b82f6;
+  --muted:#94a3b8;
+  --text:#e6eef8;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--text)}
+.center{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;gap:12px}
+.hidden{display:none}
+input,button{font-size:16px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:var(--text)}
+button{cursor:pointer}
+button.secondary{background:transparent}
+#login-screen{width:100%;max-width:400px;margin:auto;padding:20px;border-radius:12px;background:rgba(255,255,255,0.05)}
+header{display:flex;align-items:center;justify-content:space-between;padding:12px;background:var(--panel)}
+#chat-screen{max-width:800px;margin:20px auto;background:var(--panel);border-radius:12px;display:flex;flex-direction:column;overflow:hidden;height:80vh}
+main#messages{flex:1;padding:16px;overflow:auto;display:flex;flex-direction:column;gap:8px}
+.message{padding:10px;border-radius:8px;background:rgba(255,255,255,0.07);max-width:75%}
+.meta{font-size:12px;color:var(--muted);margin-bottom:4px}
+.my{align-self:flex-end;background:rgba(59,130,246,0.3)}
+#send-form{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(255,255,255,0.1)}
+#send-form input[type="text"]{flex:1}
+.error{color:#ff8b8b}
+small{color:var(--muted)}

@@ -1,0 +1,21 @@
+<body>
+  <div id="chat-screen">
+    <header>
+      <h2>School Chat</h2>
+    </header>
+
+    <main id="messages"></main>
+
+    <form id="send-form">
+      <input id="name-input" type="text" placeholder="Your name" maxlength="32" />
+      <input id="message-input" type="text" placeholder="Type a message..." required maxlength="500"/>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
